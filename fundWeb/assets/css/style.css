@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #292929;
+}
+
+header {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+header nav ul {
+    margin: 0% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+}
+
+header nav ul img {
+    height: 40px;
+}
+
+header nav ul li a {
+    color: #f2f2f2c6;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #f2f2f2c6;
+    padding-bottom: 5px;
+}
+
+main {
+    margin: 0% 10%;
+}
+
+/* estilização do index.html */
+
+main .principal {
+    margin: 18% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+main .principal img {
+    height: 18vw;
+}
+
+main .principal h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #9467F8;
+}
+
+main .principal p {
+    font-size: 2rem;
+    margin-bottom: 10%;
+    color: #f2f2f2c6;
+}
+
+main .principal button {
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #9467F8;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s;
+}
+
+main .principal button a{
+   color:#f2f2f2c6;
+}
+
+main .principal button:hover {
+    background-color: #9467F8;
+}
+
+main .sobre-mim h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #9467F8;
+}
+
+main .sobre-mim p {
+    color: #f2f2f2c6;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+main .video {
+    margin-bottom: 5%;
+}
+
+main .video h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #9467F8;
+}
+
+main .video p {
+    font-style: italic;
+    color: #f2f2f2c6;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+main .video .video-container{
+    height: 0;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 55%;
+}
+
+main .video .video-container iframe{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+}
+
+/* estilização do contato.html */
+
+main .contato{
+    margin: 10% 0%;
+}
+
+main .contato form{
+    display: flex;
+    flex-direction: column;
+}
+
+main .contato h1, .endereco h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #9467F8;
+    margin-bottom: 2%;
+}
+
+main .contato form input, textarea{
+    outline: none;
+    border: 1.5px solid #f2f2f294;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 2%;
+    padding: 1% 2%;
+    transition: 1s;
+}
+
+main .contato form input:focus, textarea:focus{
+    border: 1.5px solid #9467F8;
+}
+
+main .contato form button{
+    padding: 1% 2%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: #9467F8;
+    color: #f2f2f2c6;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 1s;
+}
+
+main .contato form button:hover{
+    background-color: #f2f2f2c6;
+    color: #9467F8;
+}
+
+main .endereco p{
+    color: #f2f2f2c6;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 2%;
+}
+
+main .endereco .endereco-container{
+    height: 0;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 55%;
+}
+
+main .endereco .endereco-container iframe{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+}
+
+main .endereco iframe{
+    margin-bottom: 5%;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1020px){
+    main .principal h1 {
+        font-size: 2rem;
+    }
+
+    main .principal p {
+        font-size: 1rem;
+    }
+
+    main .principal button{
+        font-size: 1rem;
+    }
+
+    main .sobre-mim h2 {
+        font-size: 1.5rem;
+    }
+    
+    main .sobre-mim p {
+        font-size: 1rem;
+    }
+
+    main .video h2 {
+        font-size: 1.5rem;
+    }
+    
+    main .video p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 642px){
+    header nav ul {
+        gap: 10%;
+    }
+    
+    header nav ul img {
+        height: 30px;
+    }
+
+    main .principal img {
+       display: none;
+    }
+
+    main .principal {
+        margin: 18% 0%;
+        justify-content: start;
+        display: flex;
+    } 
+
+}

@@ -7,11 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explicações</title>
+    <link rel="stylesheet" href="explicacoes.css">
+
+    <!--css interno-->
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+
 </head>
 
 <body>
     <!--alt + shift + seta = duplicar linha-->
-    <h1>Olá mundo!</h1>
     <h2>Olá mundo!</h2>
     <h3>Olá mundo!</h3>
     <h4>Olá mundo!</h4>
@@ -21,7 +29,8 @@
     <p>Olá mundo!</p>
     <hr>
 
-    <span>Comportamento inline</span>
+    <span style="color: red">Comportamento inline</span>
+    <!--css inline-->
     <!--ocuparão apenas a largura e altura de seu conteúdo interno-->
     <h4><span>Comportamento block</span></h4>
     <!--ocuparão a largura toda da página por padrão-->
@@ -55,11 +64,23 @@
     </div>
 
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum possimus debitis non, mollitia, illum vitae enim et minima error, explicabo at perferendis delectus porro sequi soluta! Reiciendis, quia fuga ea quis ullam illo tenetur ex vero animi. Est nam explicabo quod quisquam dicta voluptatibus ratione, dolores quae facilis. Explicabo, expedita.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quibusdam.
+        </p>
     </div>
 
     <div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis illo consectetur rem, nobis nam sunt illum facere tempora dicta non?</p>
+        <p class="sobre-mim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum possimus debitis non,
+            mollitia, illum vitae
+            enim et minima error, explicabo at perferendis delectus porro sequi soluta! Reiciendis, quia fuga ea quis
+            ullam illo tenetur ex vero animi. Est nam explicabo quod quisquam dicta voluptatibus ratione, dolores quae
+            facilis. Explicabo, expedita.</p>
+    </div>
+
+    <div>
+        <p class="sobre-mim" id="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis illo
+            consectetur rem, nobis nam sunt illum
+            facere tempora dicta non?</p>
     </div>
 </body>
 
