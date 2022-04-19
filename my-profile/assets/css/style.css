@@ -46,6 +46,15 @@ main {
     margin: 0% 10%;
 }
 
+footer p{
+    color: #f2f2f2c6;
+    text-align: center;
+}
+
+footer p img{
+    height: 15px;
+}
+
 /* estilização do index.html */
 
 main .principal {
@@ -162,6 +171,7 @@ main .contato form input, textarea{
     margin-bottom: 2%;
     padding: 1% 2%;
     transition: 1s;
+    color: #f2f2f294;
 }
 
 main .contato form input:focus, textarea:focus{
