@@ -26,13 +26,17 @@
             <h1>Entre em contato comigo</h1>
 
             <form action="">
-                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="nome" placeholder="Nome" onkeyup="validaNome()">
+                <span id="txtNome"></span>
 
-                <input type="email" id="email" placeholder="Email" required>
+                <input type="email" id="email" placeholder="Email" onkeyup="validaEmail()">
+                <span id="txtEmail"></span>
 
-                <textarea name="assunto" id="assunto" cols="21" rows="10" placeholder="Assunto" required></textarea>
+                <textarea name="assunto" id="assunto" cols="21" rows="10" onkeyup="validaAssunto()" placeholder="Assunto"></textarea>
+                <span id="txtAssunto"></span>
 
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
+                <span id="txtBtn"></span>
         </section>
         </form>
         <section class="endereco">
@@ -51,6 +55,8 @@
         <p class="rodape-infos">Feito com <img src="assets/img/html-icon.png" alt="Icon do html"><img src="assets/img/css-icon.png" alt="Icon do css"> e &#128156; </p>
         <p>Todos os direitos reservados: Eduarda Matias &copy</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

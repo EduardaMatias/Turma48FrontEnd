@@ -146,6 +146,62 @@ main .video .video-container iframe{
     width: 70%;
     height: 70%;
 }
+/* estilização do projetos.html */
+
+main .cards{
+    padding: 20px;
+    margin: 10% 0%;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+main .cards .card{
+    width: 50%;
+    height: 30vw;
+    border: 2px solid #9467F8;
+    border-radius: 10px;
+    box-shadow: 0 0 1em #9467F8;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+    gap: 5%;
+}
+
+main .cards .card img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main .cards .card h3{
+    color: #f2f2f2c6;
+    text-align: center;
+    font-weight: 500;
+}
+
+main .cards .card button{
+    width: 100%;
+    outline: none;
+    background-color: #9467F8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s;
+}
+
+main .cards .card button a{
+    color: #f2f2f2c6;
+    font-size: 1.2rem;
+}
+
+main .cards .card button:hover{
+    background-color: #9567f899;
+}
 
 /* estilização do contato.html */
 
@@ -167,17 +223,20 @@ main .contato h1, .endereco h2{
 
 main .contato form input, textarea{
     outline: none;
-    border: 1.5px solid #f2f2f294;
+    border: 2px solid #f2f2f294;
     border-radius: 5px;
     background-color: transparent;
-    margin-bottom: 2%;
     padding: 1% 2%;
-    transition: 1s;
     color: #f2f2f294;
 }
 
+main .contato span{
+    margin: 1% 0% 2%;
+    font-size: 0.8rem;
+}
+
 main .contato form input:focus, textarea:focus{
-    border: 1.5px solid #9467F8;
+    border: 2px solid #9467F8;
 }
 
 main .contato form button{
@@ -251,6 +310,33 @@ main .endereco iframe{
     
     main .video p {
         font-size: 1rem;
+    }
+
+    main .cards .card{
+        width: 50%;
+        width: 30%;
+        height: 30vw;
+        font-size: 0.7rem;
+    }
+
+    main .cards .card button a{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 710px){
+    main .cards {
+        flex-wrap: wrap;
+    }
+
+    main .cards .card{
+        width: 80%;
+        height: 80vw;
+        margin-bottom: 10%;font-size: 1.5rem;
+    }
+
+    main .cards .card button a{
+        font-size: 1.5rem;
     }
 }
 
